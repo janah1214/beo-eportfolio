@@ -64,6 +64,14 @@
     grid-template-columns: 1fr;
   }
 
+  .picture-info {
+    grid-template-areas:
+      'descriptionimage'
+      'description';
+
+    grid-template-columns: 1fr;
+  }
+
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
