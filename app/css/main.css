@@ -371,6 +371,10 @@ div.menu-branding.show {
     height: 128px;
   }
 
+  img.description-image {
+    content: url(https://res.cloudinary.com/dg3efn0n8/image/upload/c_scale,w_255/v1545396209/EPortfolio/logo-transparent.png);
+  }
+
   .logo-info {
     grid-template-areas: "descriptionimage" "description" "symbol1" "symbol2" "symbol3";
     grid-template-columns: 1fr;
