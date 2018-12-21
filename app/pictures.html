@@ -1,219 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dg3efn0n8/image/upload/v1545395741/EPortfolio/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>E-Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-    crossorigin="anonymous">
-  <link rel="icon" href="https://res.cloudinary.com/dg3efn0n8/image/upload/v1545395741/EPortfolio/favicon.ico" type="image/x-icon"/>
-  <link rel="stylesheet" href="css/main.css">
-  <title>E-Portfolio</title>
-</head>
-
-<body>
-  <header>
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav class="menu">
-      <div class="menu-branding">
-        <div class="logo"></div>
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">
-            Home
+
+      <nav class="menu">
+        <div class="menu-branding"><div class="logo"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item current">
+            <a href="pictures.html" class="nav-link"> Bilder </a>
+          </li>
+          <li class="nav-item">
+            <a href="video.html" class="nav-link"> Video </a>
+          </li>
+          <li class="nav-item">
+            <a href="logo.html" class="nav-link"> Logo </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="pictures">
+      <h1 class="lg-heading">
+        Überblick <span class="text-secondary">Bilder</span>
+      </h1>
+      <h2 class="sm-heading">
+        Über das Bild fahren, um die bearbeitete Version zu sehen.
+      </h2>
+      <div class="projects">
+        <div class="item">
+          <a href="./detailPictures/spiez.html">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550138/EPortfolio/20170718_114711.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1545032022/EPortfolio/before%20-%20after/see.png'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550138/EPortfolio/20170718_114711.jpg'"
+              alt="Project"/>
           </a>
-        </li>
-        <li class="nav-item current">
-          <a href="pictures.html" class="nav-link">
-            Bilder
+          <a href="./detailPictures/spiez.html" class="btn-light">
+            <i class="fas fa-eye"></i> Spiez
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="video.html" class="nav-link">
-            Video
+          <a href="http://spiez.ch/de/index.php" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
           </a>
-        </li>
-        <li class="nav-item">
-          <a href="logo.html" class="nav-link">
-            Logo
+        </div>
+        <div class="item">
+            <a href="./detailPictures/niederhorn.html">
+              <img
+                src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550203/EPortfolio/IMG_1747.jpg"
+                alt="Project"
+              />
+            </a>
+            <a href="./detailPictures/niederhorn.html" class="btn-light">
+              <i class="fas fa-eye"></i> Niederhorn
+            </a>
+            <a href="https://www.niederhorn.ch/" class="btn-dark">
+              <i class="fas fa-info-circle"></i> Weitere Infos
+            </a>
+          </div>
+        <div class="item">
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550221/EPortfolio/IMG_1764.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1545411606/EPortfolio/before%20-%20after/view1.png'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550221/EPortfolio/IMG_1764.jpg'"
+              alt="Project"
+            />
           </a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+          <a href="#" class="btn-light">
+            <i class="fas fa-eye"></i> Aussichtspunkt
+          </a>
+          <a href="http://www.berneroberland.ch/de/" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <!--<div class="item">
+          <a href="./detailPictures/thunersee.html">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550154/EPortfolio/20170718_120330.jpg"
+              alt="Project"
+            />
+          </a>
+          <a href="./detailPictures/thunersee.html" class="btn-light">
+            <i class="fas fa-eye"></i> Thunersee
+          </a>
+          <a href="http://www.thunersee.ch/de/home.html" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>-->
+        <div class="item">
+          <a href="./detailPictures/beatenberg.html">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550040/EPortfolio/IMG_3110.jpg"
+              alt="Project"
+            />
+          </a>
+          <a href="./detailPictures/beatenberg.html" class="btn-light">
+            <i class="fas fa-eye"></i> Beatenberg
+          </a>
+          <a href="http://www.beatenberg.ch/" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <div class="item">
+            <a href="./detailPictures/thun.html">
+              <img
+                src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550114/EPortfolio/IMG_8859.jpg"
+                onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542558208/EPortfolio/IMG_8859_-_Copy.jpg'"
+                onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550114/EPortfolio/IMG_8859.jpg'"
+                alt="Project"
+              />
+            </a>
+            <a href="./detailPictures/thun.html" class="btn-light">
+              <i class="fas fa-eye"></i> Thun
+            </a>
+            <a href="http://www.thun.ch/" class="btn-dark">
+              <i class="fas fa-info-circle"></i> Weitere Infos
+            </a>
+          </div>
+        <div class="item">
+          <a href="./detailPictures/interlaken.html">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550141/EPortfolio/IMG_9917.jpg"
+              alt="Project"
+            />
+          </a>
+          <a href="./detailPictures/interlaken.html" class="btn-light">
+            <i class="fas fa-eye"></i> Interlaken
+          </a>
+          <a
+            href="http://www.interlaken.ch/de/erleben-sie-interlaken.html"
+            class="btn-dark"
+          >
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <div class="item">
+          <a href="./detailPictures/bern.html">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550059/EPortfolio/IMG_6489.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550059/EPortfolio/IMG_6489.jpg'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550059/EPortfolio/IMG_6489.jpg'"
+              alt="Project"
+            />
+          </a>
+          <a href="./detailPictures/bern.html" class="btn-light">
+            <i class="fas fa-eye"></i> Bern
+          </a>
+          <a href="https://www.bern.com/de/home" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540301394/EPortfolio/before%20-%20after/img01after.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540301394/EPortfolio/before%20-%20after/img01after.jpg'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540301394/EPortfolio/before%20-%20after/img01after.jpg'"
+              alt="Project"
+            />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Niesen </a>
+          <a
+            href="https://www.niesen.ch/de/niesen-aktuell/?oid=1948&lang=de"
+            class="btn-dark"
+          >
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550094/EPortfolio/IMG_3105.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550094/EPortfolio/IMG_3105.jpg'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550094/EPortfolio/IMG_3105.jpg'"
+              alt="Project"
+            />
+          </a>
+          <a href="#" class="btn-light">
+            <i class="fas fa-eye"></i> Aussichtspunkt Adelboden
+          </a>
+          <a href="https://www.adelboden.ch/de/w/home" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550137/EPortfolio/20170722_120958.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550137/EPortfolio/20170722_120958.jpg'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550137/EPortfolio/20170722_120958.jpg'"
+              alt="Project"
+            />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="#" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <div class="item">
+          <a href="./detailPictures/beatushoehlen.html">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550154/EPortfolio/20170723_124949.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550154/EPortfolio/20170723_124949.jpg'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550154/EPortfolio/20170723_124949.jpg'"
+              alt="Project"
+            />
+          </a>
+          <a href="./detailPictures/beatushoehlen.html" class="btn-light">
+            <i class="fas fa-eye"></i> Beatushöhlen
+          </a>
+          <a href="http://www.beatushoehlen.swiss/de/" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img
+              src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540313301/EPortfolio/before%20-%20after/img02before.jpg"
+              onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540313301/EPortfolio/before%20-%20after/img02before.jpg'"
+              onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540313301/EPortfolio/before%20-%20after/img02before.jpg'"
+              alt="Project"
+            />
+          </a>
+          <a href="#" class="btn-light"> <i class="fas fa-eye"></i> Project </a>
+          <a href="#" class="btn-dark">
+            <i class="fas fa-info-circle"></i> Weitere Infos
+          </a>
+        </div>
+      </div>
+    </main>
 
-  <main id="pictures">
-    <h1 class="lg-heading">
-      Bilder
-      <span class="text-secondary">blabla</span>
-    </h1>
-    <h2 class="sm-heading">
-      Über das Bild fahren, um das Original zu sehen.
-    </h2>
-    <div class="projects">
-      <div class="item">
-        <a href="./detailPictures/thunersee.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550154/EPortfolio/20170718_120330.jpg" alt="Project">
-        </a>
-        <a href="./detailPictures/thunersee.html" class="btn-light">
-          <i class="fas fa-eye"></i> Thunersee
-        </a>
-        <a href="http://www.thunersee.ch/de/home.html" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="./detailPictures/beatenberg.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550040/EPortfolio/IMG_3110.jpg" alt="Project">
-        </a>
-        <a href="./detailPictures/beatenberg.html" class="btn-light">
-          <i class="fas fa-eye"></i> Beatenberg
-        </a>
-        <a href="http://www.beatenberg.ch/" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="./detailPictures/spiez.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550138/EPortfolio/20170718_114711.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1545032022/EPortfolio/before%20-%20after/see.png'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550138/EPortfolio/20170718_114711.jpg'" alt="Project">
-        </a>
-        <a href="./detailPictures/spiez.html" class="btn-light">
-          <i class="fas fa-eye"></i> Spiez
-        </a>
-        <a href="http://spiez.ch/de/index.php" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="./detailPictures/niederhorn.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550203/EPortfolio/IMG_1747.jpg" alt="Project">
-        </a>
-        <a href="./detailPictures/niederhorn.html" class="btn-light">
-          <i class="fas fa-eye"></i> Niederhorn
-        </a>
-        <a href="https://www.niederhorn.ch/" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="./detailPictures/interlaken.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550141/EPortfolio/IMG_9917.jpg" alt="Project">
-        </a>
-        <a href="./detailPictures/interlaken.html" class="btn-light">
-          <i class="fas fa-eye"></i> Interlaken
-        </a>
-        <a href="http://www.interlaken.ch/de/erleben-sie-interlaken.html" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="./detailPictures/thun.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550114/EPortfolio/IMG_8859.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542558208/EPortfolio/IMG_8859_-_Copy.jpg'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550114/EPortfolio/IMG_8859.jpg'" alt="Project">
-        </a>
-        <a href="./detailPictures/thun.html" class="btn-light">
-          <i class="fas fa-eye"></i> Thun
-        </a>
-        <a href="http://www.thun.ch/" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="./detailPictures/bern.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550059/EPortfolio/IMG_6489.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550059/EPortfolio/IMG_6489.jpg'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550059/EPortfolio/IMG_6489.jpg'" alt="Project">
-        </a>
-        <a href="./detailPictures/bern.html" class="btn-light">
-          <i class="fas fa-eye"></i> Bern
-        </a>
-        <a href="https://www.bern.com/de/home" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540301394/EPortfolio/before%20-%20after/img01after.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540301394/EPortfolio/before%20-%20after/img01after.jpg'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540301394/EPortfolio/before%20-%20after/img01after.jpg'" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Niesen
-        </a>
-        <a href="https://www.niesen.ch/de/niesen-aktuell/?oid=1948&lang=de" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550094/EPortfolio/IMG_3105.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550094/EPortfolio/IMG_3105.jpg'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550094/EPortfolio/IMG_3105.jpg'" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Aussichtspunkt Adelboden
-        </a>
-        <a href="https://www.adelboden.ch/de/w/home" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550137/EPortfolio/20170722_120958.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550137/EPortfolio/20170722_120958.jpg'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550137/EPortfolio/20170722_120958.jpg'" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="./detailPictures/beatushoehlen.html">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550154/EPortfolio/20170723_124949.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550154/EPortfolio/20170723_124949.jpg'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1542550154/EPortfolio/20170723_124949.jpg'" alt="Project">
-        </a>
-        <a href="./detailPictures/beatushoehlen.html" class="btn-light">
-          <i class="fas fa-eye"></i> Beatushöhlen
-        </a>
-        <a href="http://www.beatushoehlen.swiss/de/" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-      <div class="item">
-        <a href="#">
-          <img src="https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540313301/EPortfolio/before%20-%20after/img02before.jpg"
-          onmouseover="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540313301/EPortfolio/before%20-%20after/img02before.jpg'"
-          onmouseout="this.src='https://res.cloudinary.com/dg3efn0n8/image/upload/ar_16:9,c_fill,g_auto,e_sharpen/v1540313301/EPortfolio/before%20-%20after/img02before.jpg'" alt="Project">
-        </a>
-        <a href="#" class="btn-light">
-          <i class="fas fa-eye"></i> Project
-        </a>
-        <a href="#" class="btn-dark">
-          <i class="fas fa-info-circle"></i> Weitere Infos
-        </a>
-      </div>
-    </div>
-  </main>
+    <footer id="main-footer">Copyright &copy; 2018</footer>
 
-  <footer id="main-footer">
-    Copyright &copy; 2018
-  </footer>
-
-  <script src="js/main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
