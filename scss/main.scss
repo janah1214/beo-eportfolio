@@ -153,12 +153,12 @@ main {
 
   img {
     width: 100%;
-    //border: 3px #fff solid;
 
     &:hover {
       //opacity: 0.5;    
       border-color: $secondary-color;
       @include easeOut;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
     }
   }
 }
