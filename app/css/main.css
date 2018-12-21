@@ -141,6 +141,9 @@ h3 {
     h3.sm-heading.front-page {
       color: #fff; }
 
+.top {
+  margin-top: 2rem; }
+
 a {
   color: #fff;
   text-decoration: none; }
@@ -247,8 +250,7 @@ main {
 
 .btn-dark {
   background: #7b7b7b;
-  color: #fff;
-  margin-bottom: 0; }
+  color: #fff; }
 
 .btn-light {
   background: white;
