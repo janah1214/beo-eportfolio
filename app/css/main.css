@@ -171,6 +171,12 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
+.video {
+  width: 100%;
+  height: auto;
+  margin-left: 1rem;
+  margin-right: auto; }
+
 .logo-info {
   display: grid;
   grid-gap: 30px;
