@@ -1,20 +1,20 @@
 /* main */
 
-@import 'config';
-@import 'menu';
+@import "config";
+@import "menu";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-  
+
 body {
-    @include background;
-    background: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5;
+  @include background;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 // Headings
@@ -28,7 +28,7 @@ h3 {
   &.lg-heading {
     font-size: 6rem;
 
-    &.front-page{
+    &.front-page {
       color: set-text-color($primary-color-dark);
     }
   }
@@ -38,13 +38,13 @@ h3 {
     padding: 0.2rem 1rem;
     background: rgba(lighten($primary-color, 2), 0.5);
 
-    &.front-page{
+    &.front-page {
       color: set-text-color($primary-color-dark);
     }
   }
 }
 
-.top{
+.top {
   margin-top: 2rem;
 }
 
@@ -89,19 +89,28 @@ main {
   }
 }
 
-.video{
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  margin-left: 1rem;
-  margin-right: auto;
+  height: 100%;
+}
+
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; /* Default for 1600x900 videos 16:9 ratio*/
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
 }
 
 .logo-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    'descriptionimage description description'
-    'symbol1 symbol2 symbol3';
+    "descriptionimage description description"
+    "symbol1 symbol2 symbol3";
   grid-template-columns: repeat(3, 1fr);
 
   .description-image {
@@ -138,8 +147,7 @@ main {
 .picture-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas:
-    'descriptionimage description';
+  grid-template-areas: "descriptionimage description";
   grid-template-columns: repeat(2, 1fr);
 
   .description-image {
@@ -166,10 +174,11 @@ main {
     width: 100%;
 
     &:hover {
-      //opacity: 0.5;    
+      //opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4),
+        0 12px 40px 0 rgba(0, 0, 0, 0.38);
     }
   }
 }
@@ -228,23 +237,22 @@ main {
 
 .bgimg-2,
 .center-image {
-    position: relative;
-    opacity: 0.75;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 450px;
+  position: relative;
+  opacity: 0.75;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
 }
 .center-image1 {
-    background-image: url("https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550138/EPortfolio/20170718_114711.jpg");
-    
+  background-image: url("https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550138/EPortfolio/20170718_114711.jpg");
 }
 .center-image2 {
   background-image: url("https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550203/EPortfolio/IMG_1747.jpg");
   min-height: 450px;
 }
-.center-image3{
+.center-image3 {
   background-image: url("https://res.cloudinary.com/dg3efn0n8/image/upload/v1542550221/EPortfolio/IMG_1764.jpg");
   min-height: 450px;
 }
@@ -254,66 +262,66 @@ main {
 }
 
 .caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
 }
 
 .caption span.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
 .caption span.border.image-title {
-    background-color: transparent;
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
+  background-color: transparent;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
 .top-dialog {
-    color: #777;
-    background-color: white;
-    text-align: center;
-    padding: 25px 40px;
-    text-align: justify;
+  color: #777;
+  background-color: white;
+  text-align: center;
+  padding: 25px 40px;
+  text-align: justify;
 }
 
 .top-dialog h3 {
-    text-align: center;
+  text-align: center;
 }
 
-.center-dialog{
-    color:#ddd;
-    background-color:#282E34;
-    text-align:center;
-    padding:50px 80px;
-    text-align: justify;
+.center-dialog {
+  color: #ddd;
+  background-color: #282e34;
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
 }
 
 /* Turn off parallax for mobile devices */
 @media only screen and (max-device-width: 1024px) {
-    .top-image,
-    .bgimg-2,
-    .center-image {
-        background-attachment: scroll;
-    }
+  .top-image,
+  .bgimg-2,
+  .center-image {
+    background-attachment: scroll;
+  }
 }
 
 #main-footer {
   text-align: center;
   padding: 1rem;
-  background: $primary-color-dark;//darken($primary-color, 10);
+  background: $primary-color-dark; //darken($primary-color, 10);
   color: set-text-color($primary-color-dark);
   height: 60px;
 }
 
-@import 'mobile';
+@import "mobile";

@@ -100,7 +100,7 @@ body {
   color: #000;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(https://res.cloudinary.com/dg3efn0n8/image/upload/v1542558200/EPortfolio/IMG_8859_-_Copy2.jpg);
@@ -171,16 +171,25 @@ main {
     main#home h1 {
       margin-top: 20vh; }
 
-.video {
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  margin-left: 1rem;
-  margin-right: auto; }
+  height: 100%; }
+
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* Default for 1600x900 videos 16:9 ratio*/
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden; }
 
 .logo-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'descriptionimage description description' 'symbol1 symbol2 symbol3';
+  grid-template-areas: "descriptionimage description description" "symbol1 symbol2 symbol3";
   grid-template-columns: repeat(3, 1fr); }
   .logo-info .description-image {
     grid-area: descriptionimage;
@@ -203,7 +212,7 @@ main {
 .picture-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'descriptionimage description';
+  grid-template-areas: "descriptionimage description";
   grid-template-columns: repeat(2, 1fr); }
   .picture-info .description-image {
     grid-area: descriptionimage;
@@ -322,7 +331,7 @@ main {
 
 .center-dialog {
   color: #ddd;
-  background-color: #282E34;
+  background-color: #282e34;
   text-align: center;
   padding: 50px 80px;
   text-align: justify; }
